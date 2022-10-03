@@ -1,0 +1,20 @@
+# Problem-Solving-Skills
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,c,d,s=0;
+	printf("enter a number:");
+	scanf("%d",&a);
+	for(c=a;a!=0;a=a/10){
+		d=a%10;
+		s=s+(d*d*d);
+	}
+	if(c==s){
+		printf("the given number %d is amstrong..",c);
+	}
+	else{
+		printf("the given number %d is not a amstrong..",c);
+	}
+	return 0;
+}
