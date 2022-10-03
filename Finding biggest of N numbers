@@ -1,0 +1,31 @@
+//Problem-Solving-Skills
+#include<stdio.h>
+int main()
+{
+	int a[20],b,c=0,i,j;
+	printf("Enter the n number of integers to be given:");
+	scanf("%d",&b);
+	printf("enter %d numbers:\n",b);
+	for(i=0;i<b;i++)
+	{
+		printf("enter %d number",i+1);
+		scanf("%d",&a[i]);
+		printf("\n");
+	}
+	for(i=0;i<b;i++)
+	{
+		for(j=0;j<=i;j++){
+			if(a[i]<a[j]){
+			c=a[i];
+			a[i]=a[j];
+			a[j]=c;	
+			}
+		}
+	}
+	printf("The biggest number among all is:%d\n",a[b-1]);
+	printf("Assending order of given number is :\n");
+		for(i=0;i<b;i++)
+	{
+		printf("%d\n",a[i]);
+	}
+}
